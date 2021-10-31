@@ -1,0 +1,1075 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<title>Услуги</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/jquery.fancybox.min.css">
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<link rel="stylesheet" href="css/slick-theme.css">
+	<link rel="stylesheet" href="css/slick.css">
+		<!-- для меню моб -->
+	<!-- <link rel="stylesheet" href="css/main-menu.css"> -->
+	<link rel="stylesheet" href="css/style_menu.css">
+	<!-- <link rel="stylesheet" href="css/demo2.css"> -->
+
+
+	<link rel="stylesheet" href="fonts/fonts.css">
+	<link rel="stylesheet" href="css/main.css">
+<script src="https://api-maps.yandex.ru/2.0/?load=package.standard,package.geoObjects&lang=en_US" type="text/javascript"></script>
+
+  <style>
+           /*Размер карты*/
+           #map { width:100%;height:500px }
+           /*Отображение карты в черно-белом цвете */
+           .ymaps-glass-pane, .ymaps-layers-pane {filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'/></filter></svg>#grayscale") !important;
+    /* Firefox 3.5+ Chrome 19+ & Safari 6+ */
+    -webkit-filter: grayscale(100%) !important;  
+}
+    </style>
+</head>
+<body>
+
+<header id="header" class="header" >
+
+
+
+
+<!-- кнопки которые появляются  -->
+<div class="button_fix2 flexc">
+		<a data-fancybox data-src="#hisd2">
+				<div class="button_fix2_calc flexc">
+						<i class="fa fa-calculator" aria-hidden="true"></i>
+						<p>
+							
+							Калькулятор
+						</p>
+				</div>
+       </a>
+	<a data-fancybox data-src="#hisd">	
+				<div class="button_fix2_calc flexc">
+						<i class="fa fa-phone" aria-hidden="true"></i>
+						<p>
+							Обратная связь
+						</p>
+				</div>
+       </a>
+</div>
+
+
+
+
+
+
+	<!-- фиксированное меню -->
+
+
+	<div class="button_fix ">
+		<a href="#">	
+			<div class="button_fix_item flex button_fix_top">
+				<div class="button_fix_ikon">
+					<img src="img/fix_menu_ikon1.png" alt="">
+				</div>
+				<div class="button_fix_text">
+					Вызов курьера
+				</div>
+			</div>
+		</a>
+
+		<a href="calc.html">
+			<div class="button_fix_item flex">
+				<div class="button_fix_ikon">
+					<img src="img/fix_menu_ikon2.png" alt="">
+				</div>
+				<div class="button_fix_text">
+					Ваш калькулятор
+				</div>
+			</div>
+		</a>
+		<a href="#">
+			<div class="button_fix_item flex">
+				<div class="button_fix_ikon">
+					<img src="img/fix_menu_ikon3.png" alt="">
+				</div>
+				<div class="button_fix_text">
+					Заключение договора
+				</div>
+			</div>
+		</a>
+		<a href="#">
+			<div class="button_fix_item  flex button_fix_bottom ">
+				<div class="button_fix_ikon">
+					<img src="img/fix_menu_ikon4.png" alt="">
+				</div>
+				<div class="button_fix_text">
+					Обратная связь
+				</div>
+			</div>
+		</a>
+	</div>
+
+	<!-- фиксированное меню -->
+	<div class="header_figur_new">
+	</div>
+	<div class="header_figur">
+		<img src="img/bg_menu.jpg" alt="">
+	</div>
+	<div class="header_fig_serch">
+		<img src="img/bg_serch.jpg" alt="">
+	</div>
+	<div class="container no_over">
+		<div class="row">
+			<div class="col">
+				<div class="header_serch_wrap flexc">
+					<div class="header_serch flexc">
+						<div class="header_serch_ikon">
+							<i class="fa fa-search" aria-hidden="true"></i>
+						</div>
+						<div class="header_serch_in">
+							<input type="text" placeholder="Запрос для поиска"> 
+						</div>
+					</div>
+					<a href="#">	
+						<div class="header_serch_button">
+							Статус груза/заявки
+						</div>
+					</a>
+				</div>
+			</div>
+		</div>	
+		<div class="row no-gutter padd">
+			<div class="col-lg-3 d-flex align-items-center">
+				<a href="index.html">		
+					<div class="header_logo">
+						<div>
+							<img class="img-fluid" src="img/logo22.png" alt="">
+						</div>
+					</div>
+				</a>
+			</div>
+			<div class="col-lg-9">
+				<div class="header_item">
+					<div class="header_item_top flex">
+						<div class="header_cargo flexc">
+							<div class="header_cargo_ikon">
+								<img src="img/time.png" alt="">
+							</div>
+							 <div class="header_cargo_text">
+							 	прием груза
+							 </div>
+						</div>
+						<div class="header_phone">
+							<p>
+								бесплатно по РФ
+							</p>
+							<div class="header_phone_item flexc">	
+								<div class="header_phone_num">
+									+7 (495) 363-90-26
+								</div>
+								<div class="header_phone_num">
+									8 (800) 777-08-07
+								</div>
+							</div>
+						</div>
+					</div>
+					
+					<!-- <div class="burger_test">
+						
+						<button class="toggle-hamburger toggle-hamburger__animx">
+	  						<span>menu toggle</span>
+						</button>
+
+					</div> -->
+					<a data-fancybox data-src="#hisd3">	
+						<div class="bur_wrap">
+							<i class="fa fa-bars" aria-hidden="true"></i>
+						</div>
+					</a>
+					
+
+					<nav class="header_item_bottom flexc">
+
+						      <ul class="topmenu">
+						         <li><a href="#" class="submenu-link">О Компании</a>
+						          <ul class="submenu">
+						        
+						            <li class="li_wrap flexc">
+						            	<div>
+						            		<img src="img/menu_ikon2.png" alt="">
+						            	</div>
+						            	<a href="services.html">Оптима</a>
+						            </li>
+						            <li class="li_wrap flexc">
+						            	<div>
+						            		<img src="img/menu_ikon3.png" alt="">
+						            	</div>
+						            	<a href="services_econom.html">Эконом</a>
+						            </li>
+						                 <li class="li_wrap flexc">
+						            	<div>
+						            		<img src="img/menu_ikon3.png" alt="">
+						            	</div>
+						            	<a href="dop_services.html">Дополнительные услуги</a>
+						            </li>
+						            </li>
+						                 <li class="li_wrap flexc">
+						            	<div>
+						            		<img src="img/menu_ikon3.png" alt="">
+						            	</div>
+						            	<a href="calc.html">Калькулятор</a>
+						            </li>
+						          </ul>
+						        </li>
+						        <li><a href="#" class="submenu-link">Наши услуги</a>
+						         <!--  <ul class="submenu">
+						        
+						            <li class="li_wrap flexc">
+						            	<div>
+						            		<img src="img/menu_ikon2.png" alt="">
+						            	</div>
+						            	<a href="services.html">Оптима</a>
+						            </li>
+						            <li class="li_wrap flexc">
+						            	<div>
+						            		<img src="img/menu_ikon3.png" alt="">
+						            	</div>
+						            	<a href="services_econom.html">Эконом</a>
+						            </li>
+						                 <li class="li_wrap flexc">
+						            	<div>
+						            		<img src="img/menu_ikon3.png" alt="">
+						            	</div>
+						            	<a href="dop_services.html">Дополнительные услуги</a>
+						            </li>
+						            </li>
+						                 <li class="li_wrap flexc">
+						            	<div>
+						            		<img src="img/menu_ikon3.png" alt="">
+						            	</div>
+						            	<a href="calc.html">Калькулятор</a>
+						            </li>
+						          </ul> -->
+
+
+						                <ul class="submenu new_sub">
+						          	<div class="tipe_wrap flex">
+						          		
+						          	<div class="tipe">
+						          		<div class="tipe_title">
+						          			Типы перевозок
+						          		</div>
+						          		<div class="tipe_link">
+						          			<a href="services.html">Оптима </a>
+						          		</div>
+						          		<div class="tipe_link">
+						          			<a href="services_econom.html">Эконом </a>
+						          		</div>
+						          	</div>
+						          	<div class="dop_usl">
+						          		<div class="tipe_title tt_new">
+						          			Дополнительные услуги
+						          		</div>
+						          		<div class="dop_usl_wrap flex">
+						          			<div class="dop-usl_wrap_first">
+						          				<div class="tipe_link">
+						          					<a href="">Забор груза </a>
+						          				</div>
+						          				<div class="tipe_link">
+						          					<a href="">Доставка груза</a>
+						          				</div>
+						          				<div class="tipe_link">
+						          					<a href="">Погрузо-разгрузочные работы</a>
+						          				</div>
+						          				<div class="tipe_link">
+						          					<a href="">Перевозка сопроводительных документов</a>
+						          				</div>
+						          				<div class="tipe_link">
+						          					<a href="">Упаковка</a>
+						          				</div>
+						          				<div class="tipe_link">
+						          					<a href="">Страхование</a>
+						          				</div>
+						          			</div>
+						          			<div class="dop-usl_wrap_second">
+						          				<div class="tipe_link">
+						          					<a href="">Возврат документов</a>
+						          				</div>
+						          				<div class="tipe_link">
+						          					<a href="">Внутритарный пересчёт</a>
+						          				</div>
+						          				<div class="tipe_link">
+						          					<a href="">Временное хранение</a>
+						          				</div>
+						          					<div class="tipe_link">
+						          					<a href="">SMS информирование</a>
+						          				</div>
+						          			</div>
+						          		</div>
+						          	</div>
+						          	</div>
+
+
+
+						          </ul>
+						        </li>
+						        <li><a href="new.html">Информация</a></li>
+						        <li><a href="services.html">Cервис</a></li>
+						        <li><a href="ofise.html">Контакты</a></li>
+						        	<li>
+									<a class="persone_room" href="#">
+										  <div class="item_bottom_room flexc">
+											<div class="bottom_room_ikon">
+												<img src="img/room_ikon.png" alt="">
+											</div>
+											<div class="bottom_room_text">
+												Личный кабинет
+											</div>
+										</div>
+									</a>
+									</li>
+						      </ul>
+    
+					
+						
+					</nav>
+				</div>
+			</div>
+			
+		</div>
+	</div>
+</header>
+
+
+
+<section id="burger" class="burger">
+	<div class="burger_wrap">
+		<ul>
+			<li>
+				<a class="fot" href="">
+					О компании
+				</a>
+			</li>
+			<li>
+				<a class="fot" href="services.html">
+					Наши услуги
+				</a>
+				<ul class="burger_second">
+					<li>
+						<a href="services.html">Оптима</a>
+					</li>
+					<li>
+						<a href="services_econom.html">Эконом</a>
+					</li>
+					<li>
+						<a href="dop_services.html">Дополнительные услуги</a>
+					</li>
+				</ul>
+			</li>
+			<li>
+				<a class="fot" href="new.html">
+					Информация
+				</a>
+			</li>
+			<li>
+				<a class="fot" href="services.html">
+					Cервис  
+				</a>
+			</li>
+			<li>
+				<a  class="fot" href="ofise.html">
+					Контакты
+				</a>
+			</li>
+			<li>
+				<a  class="fot" href="calc.html">
+					Калькулятор
+				</a>
+			</li>
+				<li>
+									<a class="persone_room" href="#">
+										  <div class="item_bottom_room flexc">
+											<div class="bottom_room_ikon">
+												<img src="img/room_ikon.png" alt="">
+											</div>
+											<div class="bottom_room_text">
+												Личный кабинет
+											</div>
+										</div>
+									</a>
+									</li>
+		</ul>
+	
+	</div>
+</section>
+
+<section id="pagi" class="pagi">
+	<div class="container">
+		<div class="row">
+			<div class="col">
+				<div class="pagi_item">
+					Главная / Наши услуги
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<section id="nav_express" class="nav_express">
+	<div class="container">
+		<div class="row">
+			<div class="col">
+				<div class="nav_express_title">
+					Эконом
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-lg-6 col-md-6">
+				<div class="nav_express_wrap">
+					<a href="services.html">
+					<div class="nav_express_item">
+						<div class="express_item_title">
+							Оптима
+						</div>
+						<div class="express_item_text">
+							Лучшее решение для доставки грузов к определенному дню, когда стоимость доставки важна, как и срок
+						</div>
+						<div class="express_item_ikon">
+							<img src="img/term_ikon1.png" alt="">
+						</div>
+					</div>
+					</a>
+				</div>
+			</div>
+			<div class="col-lg-6 col-md-6">
+					
+					<div class="nav_express_wrap">
+						<a href="services_econom.html">
+							<div class="nav_express_item nav_express_activ">
+								<div class="express_item_title">
+									Эконом
+								</div>
+								<div class="express_item_text">
+									Перевозка грузов наиболее экономичным способом
+								</div>
+								<div class="express_item_ikon">
+									<img src="img/term_ikon2.png" alt="">
+								</div>
+							</div>
+						</a>
+					</div>
+				
+			</div>
+			
+		</div>
+	</div>
+</section>
+<section id="optima" class="optima">
+	<div class="container">
+		<div class="row">
+			<div class="col">
+				<div class="optima_arr">
+					<div class="optima_arr_title">
+						Оптима
+					</div>
+					<div class="optima_arr_item flexc">
+						<div class="optima_arr_ikon">
+							<img src="img/arr_col.png" alt="">
+						</div>
+						<div class="optima_arr_text">
+							Вам необходима недорогая экспресс-доаставка документов и грузов? Вопользуйтесь услугой «Экспресс». «Экспрес» - это лучшее решение для доставки документов и срочных отправлений ко времени.  
+						</div>
+					</div>
+					<div class="optima_text_under">
+						Доставка по России и странам СНГ «Оптима» – это услуга по доставке отправлений к определённому дню. Мы оказываем услугу в комплексе, предлагая подготовку всех необходимых документов, упаковку, маркировку.
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-lg-6">
+				<div class="description_wrap flex">
+					<div class="description_ikon">
+						<img src="img/descript1.png" alt="">
+					</div>
+					<div class="description_text">
+						<div class="description_text_title">
+							Вес:
+						</div>
+						<div class="description_text_under">
+							Минимальный тарифицируемый вес по одной накладной: 1 кг Максимальный вес/объём отправляемого груза не ограничен.
+						</div>
+					</div>
+				</div>
+				<div class="description_wrap flex">
+					<div class="description_ikon">
+						<img src="img/descript2.png" alt="">
+					</div>
+					<div class="description_text">
+						<div class="description_text_title">
+							Отслеживание направления:
+						</div>
+						<div class="description_text_under">
+							Следить за передвижением груза можно на нашем сайте в соответствующем разделе, используя уникальную систему отслеживания отправлений.
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-6">
+				 <div class="description_wrap flex">
+					<div class="description_ikon">
+						<img src="img/descript3.png" alt="">
+					</div>
+					<div class="description_text">
+						<div class="description_text_title">
+							К отправке принимаются:
+						</div>
+						<div class="description_text_under">
+							документы и печатная продукция, оборудование, БАДы и медикаменты, косметика, продукты питания с длительными и короткими сроками хранения, цветочная продукция, живые животные, орг.техника, электроника, товары народного потребления.
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-lg-6">
+				<div class="optima_price">
+					<div class="optima_price_title">
+						В стоимость услуги включены слудующие сервисы:
+					</div>
+					<div class="optima_price_list">
+						<ul>
+							<li>
+								&nbsp;&nbsp;&nbsp;• Выезд курьера для сбора документов и других отправлений;
+							</li>
+							<li>
+								&nbsp;&nbsp;&nbsp;• Упаковка документовв фирменный конверт Рус-Экспресс формата С4;
+							</li>
+							<li>
+								&nbsp;&nbsp;&nbsp;• Возможность отслеживания статуса доставки на сайте;
+							</li>
+							<li>
+								&nbsp;&nbsp;&nbsp;• Услуга доставки «от двери до двери»;
+							</li>
+							<li>
+								&nbsp;&nbsp;&nbsp;• Переадресация отправлений в пределах одного города (в случае переадресации сроки доставки грузов могут быть незначительно увеличены).
+							</li>
+						</ul>
+					</div>
+					<a href="img/fura.png" download>
+						<div class="optima_price_dawnload flexc">
+							<div>
+								<img src="img/xls_ikon.png" alt="">	
+							</div>
+							<p>
+								<span>Список населенных пунктов</span>  (в формате xls)
+							</p>
+						</div>
+					</a>
+				</div>
+			</div>
+			<div class="col-lg-6 d-flex justify-content-center">
+				<div class="optima_car">
+					<img class="img-fluid" src="img/fura.png" alt="">
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="optima_calc">
+				<div class="optima_calc_title">
+					Расчитайте стоимость в <span>онлайн калькуляторе</span> или заполните форму и мы расчитаем для вас стоимость в индивидуальном порядке 
+				</div>
+				<div class="optima_calc_form">
+						<form  action="success.php" class="js-form  style_form" id="popupResult" method="POST">
+							<div class="optima_form_wrap flex">
+								
+								<div class="optima_form_item">		
+									<div class="form_text">
+										Ваше имя:
+									</div>
+							        <input type="text" name="name" required  placeholder="Имя"  class="form-control form__field name_stile">
+								</div>
+								<div class="optima_form_item">		
+									<div class="form_text">
+										Номер телeфона:
+									</div>
+							        <input type="text" name="name" required  placeholder="+7 (___) __-__-__"  class="form-control form__field name_stile">
+								</div>
+								<div class="optima_form_item">		
+									<div class="form_text">
+										E-mail:
+									</div>
+							        <input type="text" name="name" required  placeholder="mail@mail.ru"  class="form-control form__field name_stile">
+								</div>
+
+							</div>
+
+
+					      
+					        <button class="btn__red__bottom font-bold b-stile"  data-submit>Отправить заявку</button>
+    			</form>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<section id="application" class="application">
+	<div class="container">
+		<div class="row">
+			<div class="col">
+				<div class="application_wrap flexc">
+					<div class="application_title">
+						Есть вопросы? Отправьте нам заявку!
+					</div>
+					<a data-fancybox data-src="#hisd">	
+						<div class="application_button">
+							отправить заявку на консультацию
+						</div>
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+
+<footer id="footer" class="footer">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-2 d-flex justify-content-center order-lg-1 order-md-1 col-md-6  align-items-center col-sm-6" >
+				<div class="footer_logo">
+					<div>
+						<img src="img/logo_footer2.png" alt="">
+					</div>
+					<div class="footer_logo_text">
+						Срочные перевозки Вашей почты и грузов по РФ и СНГ
+					</div>
+					<a href="#">	
+						<div class="footer_logo_room flexc">
+							<div>
+								<img src="img/room_ikon.png" alt="">
+							</div>
+							<div class="footer_room_text">
+								Личный кабинет
+							</div>
+						</div>
+					</a>
+				</div>
+			</div>
+			<div class="col-lg-7 order-lg-3 order-md-9 order-sm-9">
+				<div class="footer_wrap flex">
+					<div class="footer_wrap_servis">
+						<div class="footers_title">
+							Услуги
+						</div>
+						<div class="footer_servis_item">
+							<ul>
+								<li>
+									<a href="#">
+										Доставка сборных грузов
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										Авиаперевозки
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										ЖД перевозки
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										Автоперевозки
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										Экспресс-доставка
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										Курьерская доставка
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										Почтовая доставка
+									</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="footer_wrap_popular">
+						<div class="footers_title">
+							Популярные направления
+						</div>
+						<div class="footer_popular_wrap flex">
+							
+							<div class="footer_popular_left">
+								<ul>
+									<li>
+										<a href="#">
+											Абакан
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											Калининград
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											Москва
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											Норильск
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											Симферополь
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											Екатеринбург
+										</a>
+									</li>
+								</ul>
+							</div>
+							<div class="footer_popular_right">
+								<ul>
+									<li>
+										<a href="#">
+											Санкт-Петербург
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											Ижевск
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											Красноярск
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											Новосибирск
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											Пермь
+										</a>
+									</li>
+									
+								</ul>
+							</div>
+
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-3 order-lg-9 order-md-3 col-md-6 col-sm-6 order-sm-3">
+				<div class="footer_tel">
+					<div class="footer_tel_num">
+						<a href="#">+7 (495) 363-90-26</a>
+						<a href="#">8 (800) 777-08-07</a>
+						<p>
+							бесплатный звонок по РФ
+						</p>
+					</div>
+					<div class="footer_tel_button">
+						<a data-fancybox data-src="#hisd">
+							<div class="footer_but">
+								Обратный звонок
+							</div>
+						</a>
+						<a href="#">
+							<div class="footer_but">
+								отследить посылку
+							</div>
+						</a>	
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="footer_save_wrap">
+		<div class="container">
+			<div class="row">
+				<div class="col">
+					<div class="footer_save flexc">
+						<div class="footer_save_prava">
+							© ООО "Рус-Экспресс", 2013-2016. Все права защищены
+						</div>
+						<div class="footer_save_politika">
+							Политика конфидициальности
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+</footer>
+
+
+<!-- 	<div id="overlay" class="box">
+		<div id="thx">
+				<div class="wrap_senk">
+					<h2>Ваша заявка<br> успешно отправлена!</h2>
+
+
+				</div>
+		</div>
+   	</div>
+
+ -->
+
+
+
+<div style="display: none;" id="hisd">
+	<div class="main_form">
+						<div class="form_title_modal">
+							Обратный звонок
+						</div>
+					<form  action="suc.php" class="js-form  style_form" id="popupResult" method="POST">
+					<div class="form_text_modal">
+						Ваше имя:
+					</div>
+			        <input type="text" name="name" required  placeholder="Имя"  class="form-control form__field name_stile">
+					<div class="form_text_modal">
+						Номер телефона:
+					</div>	
+			        <input id="phone_modal" type="tel" name="tel" required  placeholder="+7 (___) __-__-__"  class="form-control form__field name_stile">
+
+			        
+			        
+			        <button class="btn__red__bottom font-bold b-stile" data-submit>заказать звонок</button>
+     
+   					 </form>
+   					 <div class="form_attention_modal">
+   					 	Нажимая на кнопку, вы даете согласие<br> на <span> обработку своих персональных данных</span>
+   					 </div>
+				</div>
+</div>
+
+
+<div style="display: none;" id="hisd2">
+	<div class="main_form">
+						<div class="form_title_modal">
+							Онлайн калькулятор
+						</div>
+							<form  action="success.php" class="js-form  style_form" id="popupResult" method="POST">
+
+					<div class="plase_wrap flex">
+						<div class="plase_item">
+							<div class="form_text">
+								Откуда 
+							</div>
+					        <input type="text" name="name" required  placeholder="Город"  class="form-control form__field name_stile">
+						</div>
+						<div class="plase_item">
+					        <div class="form_text">
+								Куда
+							</div>
+					        <input  type="text" name="tel" required  placeholder="Город"  class="form-control form__field tel_stile">
+						</div>
+					</div>
+
+					<div class="plase_wrap flex">
+						<div class="plase_item">
+							<div class="form_text">
+								Вес груза в кг 
+							</div>
+					        <input type="number" name="name" required  placeholder="-- кг"  class="form-control form__field name_stile">
+						</div>
+						<div class="plase_item">
+					        <div class="form_text">
+								Габариты в м
+							</div>
+					        <input  type="text" name="tel" required  placeholder="Д х Ш х В"  class="form-control form__field tel_stile">
+						</div>
+					</div>
+
+			        <button class="btn__red__bottom font-bold b-stile"  data-submit>Рассчитать стоимость</button>
+    			</form>
+   					 <div class="form_attention_modal">
+   					 	Нажимая на кнопку, вы даете согласие<br> на <span> обработку своих персональных данных</span>
+   					 </div>
+				</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+<div style="display: none;" id="hisd3">
+	<div class="mob_menu">
+<div class="hhh">
+	
+<ul class="cd-accordion-menu animated">
+	<li class="has-children">
+			<input type="checkbox" name ="group-2" id="group-2">
+			<label for="group-2">О Компании</label>
+
+			<ul>
+				<li><a href="0">Image</a></li>
+				<li><a href="0">Image</a></li>
+			</ul>
+		</li>
+
+		<li class="has-children">
+			<input type="checkbox" name ="group-1" id="group-1" >
+			<label for="group-1">Наши услуги</label>
+
+      		<ul>
+      			<li class="has-children">
+      				<input type="checkbox" name ="sub-group-1" id="sub-group-1">
+					<label for="sub-group-1">Типы перевозок</label>
+
+					<ul>
+						<li><a href="services.html">Оптима</a></li>
+						<li><a href="services_econom.html">Эконом</a></li>
+					</ul>
+      			</li>
+      			<li class="has-children">
+      				<input type="checkbox" name ="sub-group-2" id="sub-group-2">
+					<label for="sub-group-2">Дополнительные услуги</label>
+
+					<ul>
+						<!-- <li class="has-children">
+							<input type="checkbox" name ="sub-group-level-3" id="sub-group-level-3">
+							<label for="sub-group-level-3">Sub Group Level 3</label>
+
+							<ul>
+								<li><a href="#0">1</a></li>
+						<li><a href="#0">2</a></li>
+						<li><a href="#0">3</a></li>
+						<li><a href="#0">4</a></li>
+						<li><a href="#0">5</a></li>
+						<li><a href="#0">6</a></li>
+						<li><a href="#0">7</a></li>
+						<li><a href="#0">8</a></li>
+							</ul>
+						</li> -->
+						<li><a href="dop_services.html">Дополнительные услуги</a></li>
+						<li><a href="#">Доставка груза</a></li>
+						<li><a href="#">Погрузочно-разрузочные работы</a></li>
+						<li><a href="#">Перевозка сопроводительных документов</a></li>
+						<li><a href="#">Упаковка</a></li>
+						<li><a href="#">Страхование</a></li>
+						<li><a href="#">Возврат документов</a></li>
+						<li><a href="#">Внутренний пересчет</a></li>
+						<li><a href="#">Временное хранение</a></li>
+						<li><a href="#">SMS информирование</a></li>
+					</ul>
+      			</li>
+      			<!-- <li><a href="#0">Image</a></li>
+				<li><a href="#0">Image</a></li> -->
+      		</ul>
+		</li>
+
+		<li class="has-children">
+
+			<a href="new.html">Информация</a>
+			<!-- <input type="checkbox" name ="group-6" id="group-6">
+			<label for="group-6">Информация</label>
+
+			<ul>
+				<li><a href="#0">Image</a></li>
+				<li><a href="#0">Image</a></li>
+			</ul> -->
+		</li>
+
+		<li class="has-children">
+				<a href="calc.html">Сервис</a>
+			<!-- <input type="checkbox" name ="group-3" id="group-3">
+			<label for="group-3">Сервис</label>
+
+			<ul>
+				<li><a href="#0">Image</a></li>
+				<li><a href="#0">Image</a></li>
+			</ul> -->
+		</li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+		<li class="has-children">
+			<!-- <input type="checkbox" name ="group-4" id="group-4">
+			<label for="group-4">Контакты</label> -->
+				<a href="ofise.html">Контакты</a>
+			<ul>
+				<!-- <li class="has-children">
+					<input type="checkbox" name ="sub-group-4" id="sub-group-4">
+					<label for="sub-group-4">Sub Group 3</label>
+
+					<ul>
+						<li><a href="#0">Image</a></li>
+						<li><a href="#0">Image</a></li>
+					</ul>
+				</li> -->
+				<li><a href="#">Image</a></li>
+				<li><a href="#">Image</a></li>
+			</ul>
+		</li>
+			<li class="has-children">
+				<a href="#">Личный кабинет</a>
+			
+		</li>
+	</ul> <!-- cd-accordion-menu -->
+
+<!-- меню моб -->
+
+</div>
+
+	</div>
+
+	
+</div>
+
+
+
+    <script src="js/jquery-3.3.1.min.js"></script>
+	<script type="text/javascript" src="https://ajax.aspnetcdn.com/ajax/jquery.validate/1.14.0/jquery.validate.js"></script>
+    <script src="js/jquery.fancybox.min.js"></script>
+    <script src="js/map.js"></script>
+	<script src="js/jquery.maskedinput.js"></script>
+    <script type="text/javascript" src="js/modernizr.custom.29473.js"></script>
+
+
+
+
+    <!-- для моб меню -->
+	<script src="js/script_menu.js"></script>
+ 	<script src="js/slick.js"></script>
+ 	<script src="js/main.js"></script>
+</body>
+</html>
+
